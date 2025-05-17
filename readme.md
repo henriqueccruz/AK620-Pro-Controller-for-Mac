@@ -17,6 +17,7 @@ O **AK620 Pro Mac Controller** permite que usuários de macOS atualizem as infor
 - macOS **Sonoma** ou superior
 - DeepCool **AK620 Pro**
 - Conexão USB ativa entre o cooler e o Mac
+- [Intel Power Gadget](https://intel-power-gadget.macupdate.com/) instalado 
 
 ## 📦 Instalação
 ```sh
