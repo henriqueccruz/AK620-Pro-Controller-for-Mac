@@ -2,7 +2,7 @@
 //  DeepCoolApp.swift
 //  DeepCool
 //
-//  Created by Henrique Cruz on 07/02/25.
+//  Created by Henrique Cruz on 08/02/25.
 //
 
 import SwiftUI

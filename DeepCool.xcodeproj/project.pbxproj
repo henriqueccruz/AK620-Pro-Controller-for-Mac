@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		42636C982D587D3D00471203 /* IntelPowerGadget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42636C972D587D3D00471203 /* IntelPowerGadget.framework */; };
+		42636C992D587D3D00471203 /* IntelPowerGadget.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42636C972D587D3D00471203 /* IntelPowerGadget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42636C9C2D58A78000471203 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42636C9B2D58A78000471203 /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		42C685952D56989000AEC89A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,7 +29,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		42636C9A2D587D3D00471203 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42636C992D587D3D00471203 /* IntelPowerGadget.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		42636C902D5873D500471203 /* DeepCool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepCool-Bridging-Header.h"; sourceTree = "<group>"; };
+		42636C972D587D3D00471203 /* IntelPowerGadget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntelPowerGadget.framework; path = ../../../../Library/Frameworks/IntelPowerGadget.framework; sourceTree = "<group>"; };
+		42636C9B2D58A78000471203 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		42C685832D56988E00AEC89A /* DeepCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C685942D56989000AEC89A /* DeepCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C6859E2D56989000AEC89A /* DeepCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42636C982D587D3D00471203 /* IntelPowerGadget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42636C962D587D3C00471203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42636C972D587D3D00471203 /* IntelPowerGadget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42C6857A2D56988E00AEC89A = {
 			isa = PBXGroup;
 			children = (
+				42636C9B2D58A78000471203 /* Media.xcassets */,
+				42636C902D5873D500471203 /* DeepCool-Bridging-Header.h */,
 				42C685852D56988E00AEC89A /* DeepCool */,
 				42C685972D56989000AEC89A /* DeepCoolTests */,
 				42C685A12D56989000AEC89A /* DeepCoolUITests */,
+				42636C962D587D3C00471203 /* Frameworks */,
 				42C685842D56988E00AEC89A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +137,7 @@
 				42C6857F2D56988E00AEC89A /* Sources */,
 				42C685802D56988E00AEC89A /* Frameworks */,
 				42C685812D56988E00AEC89A /* Resources */,
+				42636C9A2D587D3D00471203 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +231,8 @@
 			);
 			mainGroup = 42C6857A2D56988E00AEC89A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 42C685842D56988E00AEC89A /* Products */;
 			projectDirPath = "";
@@ -212,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42636C9C2D58A78000471203 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -392,22 +432,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DeepCool/DeepCool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepCool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = /Library/Frameworks;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /Library/Frameworks;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.henriquecruz.DeepCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "DeepCool-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -417,22 +465,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = DeepCool/DeepCool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepCool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = /Library/Frameworks;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /Library/Frameworks;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.henriquecruz.DeepCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "DeepCool-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
