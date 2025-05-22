@@ -1,4 +1,4 @@
-# AK620 Pro Mac Controller
+# AK620 Pro Controller for Mac
 
 ![App Icon](./AppIcon.png)  
 A **única solução** para controlar e atualizar o visor do **AK620 Pro** no **macOS**.
@@ -22,10 +22,10 @@ O **AK620 Pro Mac Controller** permite que usuários de macOS atualizem as infor
 ## 📦 Instalação
 ```sh
 # Clone o repositório
-$ git clone https://github.com/henriqueccruz/DeepCool-Display-Driver-for-Mac.git
+$ git clone https://github.com/henriqueccruz/AK620-Pro-Controller-for-Mac.git
 
 # Acesse a pasta do projeto
-$ cd DeepCool-Display-Driver-for-Mac
+$ cd AK620-Pro-Controller-for-Mac
 
 # Abra o projeto no XCode e compile
 $ open -a Xcode DeepCool.xcodeproj
